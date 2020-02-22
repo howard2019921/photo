@@ -1,0 +1,13 @@
+from PIL import Image 
+o=Image.open('1.jpg')
+o.show()
+print(o.size)
+print(o.mode)
+print(o.format)
+#o_rotate=o.rotate()
+#o_rotate.show()
+x,y=o.size
+zx=int(x/999)
+zy=int(y/999)
+ssr=o.resize((zx,zy))
+ssr.show()
